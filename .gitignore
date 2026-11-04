@@ -1,0 +1,10 @@
+# A megírt könyvek (saját adatok) – nem kerülnek fel a repóba
+projects/*
+!projects/.gitkeep
+
+# Helyi eszközbeállítások és rendszerfájlok
+.claude/
+.DS_Store
+node_modules/
+*.tmp
+*.log

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arisztotelész</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">📖 Arisztotelész</div>
+    <div class="project-picker">
+      <select id="project-select" aria-label="Könyv kiválasztása"></select>
+      <button id="new-project" class="btn" data-action="new-project">+ Új könyv</button>
+    </div>
+    <nav class="tabs" id="tabs">
+      <button data-tab="brief">1. Adatok</button>
+      <button data-tab="toc">2. Tartalomjegyzék</button>
+      <button data-tab="write">3. Írás</button>
+    </nav>
+    <div class="ollama" id="ollama-status" title="Ollama állapota"></div>
+  </header>
+
+  <main id="main"></main>
+
+  <section class="drawer collapsed" id="drawer">
+    <div class="drawer-head">
+      <button class="drawer-toggle" id="drawer-toggle" title="Napló megnyitása/bezárása">▴</button>
+      <span class="spinner" id="job-spinner" hidden></span>
+      <span id="job-label">Nincs futó feladat</span>
+      <span class="grow"></span>
+      <button class="btn danger small" id="stop-job" hidden>■ Leállítás</button>
+    </div>
+    <div class="log" id="log"></div>
+  </section>
+
+  <div id="toasts"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

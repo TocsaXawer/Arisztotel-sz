@@ -1,0 +1,18 @@
+{
+  "name": "arisztotelesz",
+  "version": "1.0.0",
+  "description": "Könyvíró program helyi Ollama modellekkel: egy nagy író modell és egy kis lektor modell.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:TocsaXawer/Arisztotel-sz.git"
+  }
+}
